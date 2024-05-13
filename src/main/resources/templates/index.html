@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Teste web page</title>
+	<link rel="stylesheet" th:href="@{css/index.css}">
+	<script th:src="@{js/index.js}"></script>
+</head>
+<body>
+	<h1>OLA MUNDO DO SPRINGBOOT!</h1>
+	<nav>
+		<ul>
+			<li> <a th:href="@{/p1}">PAGINA 1</a></li>
+			<li> <a th:href="@{/p2}">PAGINA 2</a></li>
+		</ul>
+	</nav>
+	<button th:onclick="ola()">Ola</button>
+</body>
+</html>
